@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>لعبة تحديات الجبر الخطي - متقدمة</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h1>لعبة تحديات الجبر الخطي</h1>
+  <div class="scoreboard">النقاط: <span id="score">0</span></div>
+  <div class="level">المستوى: <span id="level">1</span></div>
+  <div class="timer">الوقت المتبقي: <span id="time">2:00</span></div>
+  <div class="question" id="question">جاري تحميل السؤال...</div>
+  <div class="answers" id="answers"></div>
+  <button class="next-btn" id="nextBtn" disabled>السؤال التالي</button>
+
+  <h2>أفضل النتائج</h2>
+  <ol id="highScores"></ol>
+</div>
+
+<footer>تصميم وتطوير بـ ChatGPT</footer>
+
+<script src="game.js"></script>
+
+</body>
+</html>

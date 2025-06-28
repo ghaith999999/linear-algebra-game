@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(0,0,0,0.7);
+  padding: 30px 40px;
+  border-radius: 15px;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(255,255,255,0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+.question {
+  font-size: 1.3em;
+  margin: 20px 0;
+  min-height: 70px;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+button.answer-btn {
+  background: #2a5298;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+  user-select: none;
+}
+
+button.answer-btn:hover:not(:disabled) {
+  background: #1e3c72;
+}
+
+button.answer-btn:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.scoreboard, .level, .timer {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+.next-btn {
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  background: #ff9800;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.next-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.next-btn:hover:not(:disabled) {
+  background: #e68900;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.8em;
+  opacity: 0.6;
+}
+
+#highScores {
+  text-align: right;
+  margin-top: 10px;
+  font-size: 1em;
+  padding-inline-start: 20px;
+}
